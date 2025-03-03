@@ -395,26 +395,7 @@
 MPdpQiydTOXF5H0SFOVEpQwai6A2pcF0ctXfrGl3", "AnTuvmNTseAc3EypVD0kBNgUPLNQVMDOthPI8Fyx");
         Parse.serverURL = "https://parseapi.back4app.com/";
 		
-		// 初始化执行
-        document.addEventListener('DOMContentLoaded', function() {
-            updateAllPrices();
-       
-const app = tcb.init({
-        env: "quanzhou-car-8g3w1kzr749df5f8" // 替换为你的环境 ID
-    });
-    
-			const auth = app.auth();
-			
-			const db = app.database();
-
-    // 调试日志
-    console.log("TCB实例:", app);
-    console.log("数据库实例:", db);
-
-    if (!app || !db) {
-        alert("云环境初始化失败，请检查控制台错误");
-    }
-			
+					
 	// 绑定车型卡点击事件
         document.querySelectorAll('.car-card').forEach(card => {
             card.addEventListener('click', function() {
